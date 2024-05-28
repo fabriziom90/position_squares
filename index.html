@@ -9,13 +9,82 @@
 </head>
 
 <body>
-    <h2>Position: static</h2>
-    <div class="square bg-red"></div>
-    <div class="square bg-blue"></div>
-    <h2>Position: relative</h2>
-    <div class="square bg-red"></div>
-    <div class="square bg-blue relative top-40 left-300"></div>
-    <div class="square bg-green"></div>
+    <header>
+        <div class="container-full">
+            <div class="row">
+                <div class="col-30">
+                    <div class="content">
+                        <h1>LOGO</h1>
+                    </div>
+                </div>
+                <div class="col-70">
+                    <div class="content">
+                        <ul>
+                            <li><a href="">Position: static</a></li>
+                            <li><a href="">Position: relative</a></li>
+                            <li><a href="">Position: absolute</a></li>
+                            <li><a href="">Position: fixed</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="static">
+            <h2>Position: static</h2>
+            <h3><em>Valore di default</em></h3>
+            <div class="square bg-red"></div>
+            <div class="square bg-blue"></div>
+        </div>
+        <hr>
+        <div id="relative">
+            <h2>Position: relative</h2>
+            <h3><em>Posiziona in maniera relativa l'elemento all'interno del documento. Con valori di top, bottom, left
+                    e
+                    right
+                    diversi da zero, l'elemento si muove all'interno del documento ma <strong>NON viene rimosso dal
+                        flusso</strong> pertanto lo spazio che occupava all'inizio rimane.</em></h3>
+            <div class="square bg-red"></div>
+            <div class="square bg-blue relative top-40 left-300"></div>
+            <div class="square bg-green"></div>
+        </div>
+        <hr>
+        <div id="absolute">
+            <h2>Position: absolute</h2>
+            <h3><em>Posiziona in maniera assoluta rispetto il primo elemento <strong>ANTENATO</strong> con valore di
+                    position
+                    <strong>DIVERSO</strong> da static. Se non è presente alcun antenato con valore di position diverso
+                    da
+                    static, si posiziona in maniera assoluta rispetto al tag body. L'elemento viene rimosso dal flusso
+                    del
+                    documento, pertanto gli elementi successivi occuperanno il suo spazio.</em></h3>
+            <h3>Nessun antenato con position diverso da static</h3>
+            <div class="square bg-red"></div>
+            <div class="square bg-blue absolute top-100 left-300"></div>
+            <div class="square bg-green"></div>
+            <h3>Antenato con position diverso da static</h3>
+            <div class="square bg-red"></div>
+            <div class="relative bg-grey">
+                <div>
+                    <div class="square bg-blue absolute top-40 left-300"></div>
+                </div>
+            </div>
+            <div class="square bg-green"></div>
+        </div>
+        <hr>
+        <div id="fixed">
+            <h2>Position: fixed</h2>
+            <div class="round bg-green fixed right-40 bottom-20"></div>
+        </div>
+        <hr>
+        <div id="z-index">
+            <h2>Z-index</h2>
+            <div class="square bg-red"></div>
+            <div class="square bg-blue"></div>
+            <div class="square bg-green"></div>
+        </div>
+    </main>
 </body>
 
 </html>
