@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.square {
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+}
+
+.relative {
+    position: relative;
+}
+
+.top-40 {
+    top: 40px;
+}
+
+.left-300 {
+    left: 300px;
+}
+
+.bg-red {
+    background-color: rgba(255, 0, 0, 0.535);
+}
+
+.bg-blue {
+    background-color: rgba(0, 21, 255, 0.535);
+}
+
+.bg-green {
+    background-color: rgba(0, 177, 47, 0.535);
+}
